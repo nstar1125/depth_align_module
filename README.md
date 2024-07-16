@@ -15,7 +15,7 @@ conda activate depth
 
 ## Usage
 
-The dataset is expected to be in COLMAP format (contains a colmap/sparse/0 folder in data root) since SfM points are required. Below is the script to generate SfM aligned depths from images.
+The dataset is expected to be in COLMAP format (contains a sparse/0 folder in data root) since SfM points are required. Below is the script to generate SfM aligned depths from images.
 
 ```bash
 python align_depth.py --data [path_to_data_root] \

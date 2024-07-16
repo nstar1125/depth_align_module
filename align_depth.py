@@ -53,7 +53,7 @@ class ColmapToAlignedMonoDepths:
 
     data: Path
     """Input dataset path"""
-    sparse_path: Path = Path("colmap/sparse/0")
+    sparse_path: Path = Path("sparse/0")
     """Default path of colmap sparse dir"""
     img_dir_name: str = "images"
     """Directory name of where input images are stored. Default is '/images', but you can remap it to something else. """
@@ -66,7 +66,7 @@ class ColmapToAlignedMonoDepths:
     iterations: int = 1000
     """Number of grad descent iterations to align depths"""
     align_method: Literal["closed_form", "grad_descent"] = "closed_form"
-    """Use closed form solution for depth alignment or graident descent"""
+    """Use closed form solution for depth alignment or gradient descent"""
 
     def main(self) -> None:
 
