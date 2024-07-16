@@ -1,0 +1,21 @@
+name: depth_align  # 환경 이름
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pytorch=2.0.1
+  - torchvision=0.15.2
+  - torchaudio=2.0.2
+  - pytorch-cuda=11.8
+  - pip:
+    - opencv-python
+    - matplotlib
+    - tyro
+    - open3d
+    - jaxtyping
+    - natsort
+    - timm==0.6.7
+    - transformers
